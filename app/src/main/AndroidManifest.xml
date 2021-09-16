@@ -35,4 +35,7 @@
         </activity>
     </application>
 
+    <queries>
+        <package android:name="com.google.ar.core" />
+    </queries>
 </manifest>

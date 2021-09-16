@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        rel {
+            storeFile file('Y:\\y\\me\\2021_me\\key_android.jks')
+            storePassword 'password'
+            keyAlias 'key0'
+            keyPassword 'password'
+        }
+    }
     compileSdk 31
 
     defaultConfig {
@@ -13,6 +21,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {
